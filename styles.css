@@ -1,0 +1,119 @@
+/* ============== BASE ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-color);
+}
+/* ============== VARIABLE CSS =========== */
+:root{
+    --normal-font-size:1.5rem;
+    --white-color:#fff;
+    --black-color:#1f1f1f;
+}
+/* ============= MAIN ==================== */
+.card{
+    margin: auto;
+    width: 500px;
+    background: linear-gradient(135deg,rgb(80, 73, 178),rgb(100, 165, 65));
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+}
+.search input{
+    padding: 16px;
+    outline: none;
+    flex: 4;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+}
+.search button{
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.search button img{
+    width: 30%;
+    height: 40%;
+}
+.loading,
+.error{
+    display: none;
+    margin-top: 20px;
+    transition: all 1s;
+    font-size: var(--normal-font-size);
+    color: var(--white-color);
+}
+.weather{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 40%;
+    margin: 15px 0;
+}
+h1{
+    font-size: calc( var(--normal-font-size) *3.5);
+    color: white;
+}
+h2{
+    font-size: calc( var(--normal-font-size) *2);
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.details .col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    img{
+        width: 25%;
+    }
+    div{
+        color: var(--white-color);
+    }
+    div .humidity,
+    div .wind{
+    font-size:calc( var(--normal-font-size)*1.2);
+    }
+}
+
+
+
